@@ -1,0 +1,226 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hòa vốn & Thu hồi vốn đầu tư · Quán café Đà Lạt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pri:#8B5CF6;--pri-d:#6D28D9;--pri-t:#C4B5FD;--acc:#EC4899;--cy:#06B6D4;--tint:#F3E8FF;--tx:#1E1B2E;--tx2:#5B5779;--mu:#8B87A3;--good:#059669;--warn:#F59E0B;--bad:#DC2626;--bd:#ECE4F5;--sh:0 4px 20px rgba(139,92,246,.06);--grad:linear-gradient(135deg,#8B5CF6 0%,#EC4899 100%);--serif:'Noto Serif',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#F8F6FF;color:var(--tx);font:14px/1.6 var(--sans);-webkit-font-smoothing:antialiased;padding:0}
+.wrap{max-width:1200px;margin:0 auto;padding:28px clamp(14px,4vw,40px) 0}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px}
+h1{font:300 clamp(26px,3.6vw,40px)/1.1 var(--serif);letter-spacing:-.5px}
+.sub{color:var(--mu);font-size:13px;margin-top:6px}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:13px;color:var(--tx2)}
+select{font:inherit;padding:8px 14px;border:1px solid var(--bd);border-radius:16px;background:#fff;color:var(--tx);cursor:pointer;box-shadow:0 3px 10px rgba(139,92,246,.22);transition:box-shadow .2s,transform .2s}select:hover{box-shadow:0 5px 14px rgba(139,92,246,.32);transform:translateY(-1px)}
+.seg{display:inline-flex;background:#fff;border:1px solid var(--bd);border-radius:999px;padding:3px;box-shadow:0 3px 10px rgba(139,92,246,.22)}
+.seg button{font:500 13px var(--sans);border:0;background:none;color:var(--tx2);padding:6px 16px;border-radius:999px;cursor:pointer;transition:box-shadow .2s,transform .2s}.seg button:hover{transform:translateY(-1px)}
+.seg button.on{background:var(--pri);color:#fff;box-shadow:0 3px 8px rgba(139,92,246,.45)}
+.hero{background:#fff;border:1px solid var(--bd);border-radius:28px;box-shadow:var(--sh);padding:28px 32px;margin-top:22px;border-left:6px solid var(--pri)}
+.chip{display:inline-block;font-size:12px;font-weight:600;color:var(--tx2);background:var(--tint);border-radius:999px;padding:4px 14px}
+.hero h2{font:400 clamp(20px,2.6vw,28px)/1.35 var(--serif);margin:12px 0 6px}
+.hero p{color:var(--tx2);max-width:80ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:14px;margin-top:18px}
+.k{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:16px 18px;box-shadow:var(--sh)}
+.k .l{font-size:12px;color:var(--mu);font-weight:500;cursor:help;border-bottom:1px dotted var(--mu)}
+.k .v{font-size:26px;font-weight:700;letter-spacing:-.4px;margin-top:6px;line-height:1.1;font-variant-numeric:tabular-nums}.k.hl .v{color:var(--pri)}
+.k .d{font-size:12px;margin-top:6px;color:var(--mu)}
+.up{color:var(--good);font-weight:600}.dn{color:var(--bad);font-weight:600}.wn{color:#B45309;font-weight:600}.nu{color:var(--mu)}
+h3.s{font:300 clamp(22px,2.6vw,30px)/1.2 var(--serif);margin:44px 0 4px}
+.q{color:var(--mu);font-size:13px;margin-bottom:14px}
+.ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:18px}
+.ic{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:20px;box-shadow:var(--sh);border-top:4px solid var(--pri)}
+.ic.w{border-top-color:var(--warn)}.ic.g{border-top-color:var(--good)}
+.ic h4{font:400 15px/1.3 var(--serif);margin-bottom:8px}.ic p{font-size:13px;color:var(--tx2)}
+.card{background:#fff;border:1px solid var(--bd);border-radius:28px;padding:24px;box-shadow:var(--sh);overflow:hidden}
+.card h4{font:400 18px/1.3 var(--serif)}.card .q{margin:4px 0 10px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:860px){.g2{grid-template-columns:1fr}}
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--tx2);margin-bottom:6px}.leg i{display:inline-block;width:12px;height:8px;margin-right:6px;border-radius:2px}.leg i.ln{height:3px;vertical-align:middle}
+svg{width:100%;height:auto;display:block}.ax{font:11px var(--sans);fill:var(--mu)}
+.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;min-width:820px}
+th{font-weight:600;color:var(--tx2);text-align:right;padding:10px;border-bottom:2px solid var(--bd);font-size:12px}th:first-child,td:first-child{text-align:left}th small{font-weight:400;color:var(--mu)}
+td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--bd);font-variant-numeric:tabular-nums}
+tr.t td{font-weight:700;background:var(--tint)}tr.s td:first-child{padding-left:30px;color:var(--tx2)}td.h{cursor:help}
+.ia{margin-top:14px;background:var(--tint);border-radius:16px;padding:12px 16px;font-size:13px;color:var(--tx)}.ia p+p{margin-top:6px}.ia b{display:inline-block;min-width:96px;font-weight:600;color:var(--tx2)}.ia .ac b{color:var(--pri-d)}.ia .ac{font-weight:500}
+.conc{background:#fff;border:1px solid var(--bd);border-left:6px solid var(--pri);border-radius:28px;box-shadow:var(--sh);padding:28px 32px}.conc h2{font:400 clamp(20px,2.6vw,28px)/1.35 var(--serif)}.conc>p{color:var(--tx2);margin-top:6px}.conc ul{list-style:none;margin-top:18px;border-top:1px solid var(--bd)}.conc li{padding:12px 0;border-bottom:1px solid var(--bd)}.conc li b{display:inline-block;min-width:96px;color:var(--pri-d)}
+.note{font-size:12px;color:var(--mu);margin-top:8px}
+.footer{background:var(--grad);padding:10px 16px;margin-top:56px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 10px;text-align:center}
+.footer .line1{font:italic 400 13px var(--serif);color:#fff}
+.footer .line2{font:500 11px var(--sans);color:rgba(255,255,255,.8);letter-spacing:.6px}
+.footer .line3{font:italic 12px var(--serif);color:rgba(255,255,255,.7)}.footer .fdot{color:rgba(255,255,255,.45)}
+
+.inv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 20px;margin-top:16px}
+.inv label{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;color:var(--tx2)}
+.inv input{width:92px;text-align:right;font:600 13px var(--sans);padding:6px 8px;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--tx)}
+.tot{border-top:1px solid var(--bd);margin-top:14px;padding-top:12px;display:flex;justify-content:space-between;font-weight:700;color:var(--pri-d)}
+.setrow{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:14px;font-size:13px;color:var(--tx2)}
+.setrow input[type=number]{width:64px;font:inherit;padding:6px 8px;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--tx);box-shadow:0 3px 10px rgba(139,92,246,.18)}
+tr.pb td{background:var(--tint);font-weight:700}
+.tabs{display:inline-flex;background:#fff;border:1px solid var(--bd);border-radius:999px;padding:3px;box-shadow:0 3px 10px rgba(139,92,246,.22)}
+.tabs button{font:600 14px var(--sans);border:0;background:none;color:var(--tx2);padding:8px 20px;border-radius:999px;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.tabs button:hover{transform:translateY(-1px)}.tabs button.on{background:var(--pri);color:#fff;box-shadow:0 3px 8px rgba(139,92,246,.45)}
+.page{display:none}.page.on{display:block}
+.ctx{font-size:13px;color:var(--mu);margin-top:6px}.ctx a{color:var(--pri-d);font-weight:600;text-decoration:none;border-bottom:1px dotted var(--pri-d);cursor:pointer}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 20px;margin-top:16px}
+.split label{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;color:var(--tx2)}
+.split input{width:70px;text-align:right;font:600 13px var(--sans);padding:6px 8px;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--tx)}
+.assum{font-size:12.5px;color:var(--mu);margin-top:12px;line-height:1.6}
+.scards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:16px}
+.scard{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:18px;box-shadow:var(--sh);border-top:4px solid var(--pri-t);cursor:pointer;transition:box-shadow .2s,transform .2s}
+.scard:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(139,92,246,.18)}
+.scard.on{border-top-color:var(--pri);box-shadow:0 6px 18px rgba(139,92,246,.28)}
+.scard h4{font:400 16px/1.3 var(--serif);margin-bottom:6px}.scard p{font-size:12.5px;color:var(--tx2)}
+.scard .g{font-size:12px;color:var(--mu);margin-top:8px}.scard .pick{display:inline-block;margin-top:10px;font-size:12px;font-weight:600;color:var(--pri-d)}
+h3.s{font:300 clamp(22px,2.6vw,30px)/1.2 var(--serif);margin:44px 0 4px}
+.q{color:var(--mu);font-size:13px;margin-bottom:14px}
+.ia{margin-top:14px;background:var(--tint);border-radius:16px;padding:12px 16px;font-size:13px;color:var(--tx)}.ia p+p{margin-top:6px}.ia b{display:inline-block;min-width:96px;font-weight:600;color:var(--tx2)}.ia .ac b{color:var(--pri-d)}.ia .ac{font-weight:500}
+.conc{background:#fff;border:1px solid var(--bd);border-left:6px solid var(--pri);border-radius:28px;box-shadow:var(--sh);padding:28px 32px}.conc h2{font:400 clamp(20px,2.6vw,28px)/1.35 var(--serif)}.conc>p{color:var(--tx2);margin-top:6px}.conc ul{list-style:none;margin-top:18px;border-top:1px solid var(--bd)}.conc li{padding:12px 0;border-bottom:1px solid var(--bd)}.conc li b{display:inline-block;min-width:96px;color:var(--pri-d)}
+.note{font-size:12px;color:var(--mu);margin-top:8px}
+</style></head><body><div class="wrap">
+<header><div><h1>Hòa vốn &amp; Thu hồi vốn đầu tư</h1><div class="sub">Quán café · Đà Lạt</div></div>
+<span class="tabs" id="tabs"><button data-p="rp" class="on">Báo cáo</button><button data-p="in">Thông tin</button></span></header>
+
+<div class="page on" id="page-rp">
+<div class="ctx" id="ctx"></div>
+<div class="kpis" id="kpis" style="margin-top:16px"></div>
+
+<h3 class="s">Hòa vốn mỗi tháng</h3><p class="q">Doanh thu tối thiểu mỗi tháng để không lỗ. Mùa thấp điểm cần bán nhiều hơn để bù cùng một khoản tiền thuê.</p>
+<div class="card"><h4 id="t0"></h4><div id="c0"></div><div id="i0"></div></div>
+
+<h3 class="s">Thu hồi vốn</h3>
+<div class="bar" style="margin:0 0 10px"><span class="seg" id="hz"><button data-h="24">2 năm</button><button data-h="36">3 năm</button><button data-h="60" class="on">5 năm</button><button data-h="0">Cả thời hạn thuê</button></span></div>
+<div class="card"><h4 id="t1"></h4><div id="c1"></div><div id="i1"></div></div>
+
+<h3 class="s">Kinh doanh theo năm</h3><div class="card scroll"><table id="yr"></table></div><p class="note">Chi phí gồm giá vốn, nhân sự, thuê mặt bằng và chi phí vận hành khác, chưa gồm khấu hao, lãi vay, thuế.</p>
+<h3 class="s">Kết luận</h3><div id="concl"></div>
+</div>
+
+<div class="page" id="page-in">
+<h3 class="s" style="margin-top:22px">Vốn đầu tư ban đầu</h3><p class="q">Sửa số cho đúng với quán của bạn, phần Báo cáo sẽ tính lại ngay.</p>
+<div class="card"><div class="inv" id="inv"></div><div class="tot"><span>Tổng vốn đầu tư</span><span id="tot"></span></div>
+<div class="setrow"><label>Thời hạn thuê mặt bằng <input type="number" id="ls" min="3" max="15" value="10"> năm</label></div></div>
+
+<h3 class="s">Giá bán &amp; cơ cấu chi phí</h3><p class="q">Dùng để tính doanh thu hòa vốn ra số ly, và tách chi phí cố định / biến đổi.</p>
+<div class="card"><div class="split">
+<label>Giá bán trung bình mỗi ly/đơn <span><input type="number" id="price" min="0" step="1000" value="35000"> đ</span></label>
+<label>% chi phí nhân sự là cố định <span><input type="number" id="fs" min="0" max="100" step="5" value="60"> %</span></label>
+<label>% chi phí vận hành khác là cố định <span><input type="number" id="fo" min="0" max="100" step="5" value="50"> %</span></label>
+</div>
+<p class="assum">Giá vốn nguyên liệu luôn tính là chi phí biến đổi. Thuê mặt bằng luôn tính là chi phí cố định. Phần còn lại của nhân sự và chi phí vận hành khác được tính là biến đổi.</p></div>
+
+<h3 class="s">Chọn kịch bản doanh thu</h3><p class="q">Ba kịch bản đều suy ra từ số liệu thực tế, không phải đoán tăng trưởng tương lai. Chọn một kịch bản để xem trong tab Báo cáo.</p>
+<div class="scards" id="scards"></div>
+</div>
+<div class="footer"><span class="line1">Ny Huynh <span class="fdot">·</span> Vietnam</span><span class="fdot">·</span><span class="line2">BI Analyst <span class="fdot">·</span> AI Solution</span><span class="fdot">·</span><span class="line3">see the data · see the future</span></div>
+<script>const SEAS=[1.12,1.10,1.0,1.08,0.98,0.95,1.0,1.02,0.92,0.90,0.96,1.15];
+const M=[];
+for(let i=0;i<24;i++){const dt=new Date(2024,9+i,1),m=dt.getMonth(),y=dt.getFullYear();
+const rev=Math.round(310*Math.pow(1.007,i)*SEAS[m]);
+const cogs=Math.round(rev*(.335+((i*7)%5)*.003));
+const staff=Math.round(68+rev*.065+(i>=12?4:0));
+const rent=45,other=Math.round(18+rev*.05),op=rev-cogs-staff-rent-other;
+const dep=14,fin=4,tax=Math.max(0,Math.round((op-dep-fin)*.2));
+M.push({y,m:m+1,q:Math.floor(m/3)+1,label:(m+1)+'/'+String(y).slice(2),rev,cogs,gp:rev-cogs,staff,rent,other,op,dep,fin,tax,pat:op-dep-fin-tax});}
+const INV=[['Chi phí sửa chữa / xây dựng',520],['Trang thiết bị',380],['Nội thất',260],['Tiền đặt cọc',180],['Chi phí khai trương',90],['Chi phí trước khai trương',70],['Vốn lưu động ban đầu',300]];
+const SC={cons:{n:'Thận trọng',g:.01,c:.02},base:{n:'Cơ sở',g:.04,c:.03},grow:{n:'Tăng trưởng',g:.08,c:.04}};
+function years(sc,L){const Y=[];for(let k=1;k<=L;k++){let rev,cost;if(k<=2){const s=M.slice((k-1)*12,k*12);rev=s.reduce((a,x)=>a+x.rev,0);cost=rev-s.reduce((a,x)=>a+x.op,0)}else{const y2=Y[1];rev=y2.rev*Math.pow(1+sc.g,k-2);cost=y2.cost*Math.pow(1+sc.c,k-2)}Y.push({k,rev,cost,p:rev-cost,act:k<=2})}let c=0;Y.forEach(y=>{c+=y.p;y.cum=c});return Y}
+function monthly(sc,L,nm){const Y=years(sc,Math.max(L,2));const o=[];let c=0;for(let m=1;m<=nm;m++){c+=m<=24?M[m-1].op:Y[Math.ceil(m/12)-1].p/12;o.push(c)}return o}
+if(typeof module!=='undefined')module.exports={M,INV,SC,years,monthly};
+const $=s=>document.querySelector(s);
+const fm=n=>{const a=Math.abs(n),s=n<0?'−':'';return s+(a>=1000?(a/1000).toLocaleString('vi-VN',{maximumFractionDigits:2})+' tỷ':Math.round(a).toLocaleString('vi-VN')+' tr')};
+const pc=n=>(n*100).toLocaleString('vi-VN',{maximumFractionDigits:1})+'%';
+const chg=(a,b)=>b?(a-b)/Math.abs(b):null;
+const dl=(c,good=true)=>c==null?'<span class="nu">—</span>':`<span class="${(c>=0)==good?'up':'dn'}">${c>=0?'▲':'▼'} ${pc(Math.abs(c))}</span>`;
+const leg=S=>'<div class="leg">'+S.map(s=>`<span><i style="background:${s.c}"></i>${s.n}</span>`).join('')+'</div>';
+function chart(el,labels,S,o={}){const W=760,H=o.h||250,L=56,R=14,T=14,B=30,n=labels.length,f=o.f||fm,g=(W-L-R);
+const all=S.flatMap(s=>s.v).filter(v=>v!=null);
+const mx=Math.max(...(o.stack?labels.map((_,i)=>S.reduce((a,s)=>a+s.v[i],0)):all)),mn=o.stack?0:Math.min(0,...all);
+const px=i=>L+(o.stack?(i+.5)*g/n:i*g/Math.max(n-1,1)),py=v=>T+(H-T-B)*(1-(v-mn)/((mx-mn)||1));
+let h=leg(S)+`<svg viewBox="0 0 ${W} ${H}" role="img">`;
+for(let k=0;k<=4;k++){const v=mn+(mx-mn)*k/4,y=py(v);h+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="#ECE4F5"/><text x="${L-6}" y="${y+4}" text-anchor="end" class="ax">${f(v)}</text>`}
+const st=Math.ceil(n/12);labels.forEach((l,i)=>{if(i%st==0)h+=`<text x="${px(i)}" y="${H-8}" text-anchor="middle" class="ax">${l}</text>`});
+if(o.stack){const bw=g/n*.62;labels.forEach((_,i)=>{let a=0;S.forEach(s=>{const y0=py(a),y1=py(a+s.v[i]);h+=`<rect x="${px(i)-bw/2}" y="${y1}" width="${bw}" height="${y0-y1}" fill="${s.c}"/>`;a+=s.v[i]})})}
+else S.forEach(s=>{let d='',p=false;s.v.forEach((v,i)=>{if(v==null){p=false;return}d+=(p?'L':'M')+px(i).toFixed(1)+' '+py(v).toFixed(1);p=true});h+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="2.2" ${s.dash?'stroke-dasharray="6 5"':''}/>`});
+if(o.mark!=null&&o.mark>=0){const x=px(o.mark);h+=`<line x1="${x}" x2="${x}" y1="${T}" y2="${H-B}" stroke="#EC4899" stroke-width="1.5" stroke-dasharray="3 3"/><text x="${Math.min(x+6,W-150)}" y="${T+12}" class="ax" style="fill:#EC4899;font-size:12px;font-weight:600">${o.markLabel}</text>`}
+const w=g/n;labels.forEach((l,i)=>h+=`<rect x="${px(i)-w/2}" y="${T}" width="${w}" height="${H-T-B}" fill="transparent"><title>${l}: ${S.filter(s=>s.v[i]!=null).map(s=>s.n+' '+f(s.v[i])).join(' | ')}</title></rect>`);
+el.innerHTML=h+'</svg>'}
+const n0=x=>Math.round(x).toLocaleString('vi-VN');
+M.forEach(x=>x.full='Tháng '+x.m+'/'+x.y);
+let inv=INV.map(x=>x[1]),hz=60,ls=10,price=35000,fs=60,fo=50,scKey='current';
+$('#tabs').onclick=e=>{if(!e.target.dataset.p)return;[...$('#tabs').children].forEach(b=>b.classList.toggle('on',b===e.target));['rp','in'].forEach(p=>$('#page-'+p).classList.toggle('on',p===e.target.dataset.p))};
+$('#inv').innerHTML=INV.map((x,i)=>`<label>${x[0]}<span><input type="number" min="0" step="10" value="${x[1]}" data-i="${i}"> tr</span></label>`).join('');
+$('#inv').oninput=e=>{inv[+e.target.dataset.i]=+e.target.value||0;draw()};
+$('#ls').oninput=e=>{ls=+e.target.value||10;draw()};
+$('#price').oninput=e=>{price=+e.target.value||1;draw()};
+$('#fs').oninput=e=>{fs=+e.target.value||0;draw()};
+$('#fo').oninput=e=>{fo=+e.target.value||0;draw()};
+$('#hz').onclick=e=>{if(e.target.dataset.h==null)return;hz=+e.target.dataset.h;[...$('#hz').children].forEach(b=>b.classList.toggle('on',b===e.target));draw()};
+const goInfo=()=>{['rp','in'].forEach(p=>$('#page-'+p).classList.toggle('on',p=='in'));[...$('#tabs').children].forEach(b=>b.classList.toggle('on',b.dataset.p=='in'))};
+const dt=m=>{const d=new Date(2024,9+m-1,1);return 'tháng '+(d.getMonth()+1)+'/'+d.getFullYear()};
+const smon=m=>[12,1,2,4].includes(m)?'high':[6,9,10].includes(m)?'low':'mid';
+const SNn={high:'mùa cao điểm',mid:'mùa bình thường',low:'mùa thấp điểm'};
+const ia=(id,ins,act)=>{$(id).innerHTML=`<div class="ia"><p><b>Nhận xét</b>${ins}</p><p class="ac"><b>Việc cần làm</b>${act}</p></div>`};
+function leg2(S){return '<div class="leg">'+S.map(s=>`<span><i style="${s.ln?'height:3px;':''}background:${s.c}"></i>${s.n}</span>`).join('')+'</div>'}
+function bandChart(el,lab,band,lines,f){const W=760,H=250,L=56,R=14,T=14,B=30,n=lab.length,g=W-L-R,sl=g/n;
+const all=lines.flatMap(l=>l.v).filter(v=>v!=null),mx=Math.max(...all)*1.06,mn=0;
+const px=i=>L+(i+.5)*sl,py=v=>T+(H-T-B)*(1-(v-mn)/(mx-mn||1));
+let h=leg2(lines)+`<svg viewBox="0 0 ${W} ${H}" role="img">`;
+band.forEach((b,i)=>{if(b!='mid')h+=`<rect x="${L+i*sl}" y="${T}" width="${sl}" height="${H-T-B}" fill="${b=='high'?'rgba(236,72,153,.10)':'rgba(139,135,163,.16)'}"/>`});
+for(let k=0;k<=4;k++){const y=T+(H-T-B)*k/4;h+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="#ECE4F5"/><text x="${L-6}" y="${y+4}" text-anchor="end" class="ax">${f(mn+(mx-mn)*(4-k)/4)}</text>`}
+const st=Math.ceil(n/12);lab.forEach((l,i)=>{if(i%st==0)h+=`<text x="${px(i)}" y="${H-8}" text-anchor="middle" class="ax">${l}</text>`});
+lines.forEach(l=>{let d='',p=false;l.v.forEach((v,i)=>{if(v==null){p=false;return}d+=(p?'L':'M')+px(i).toFixed(1)+' '+py(v).toFixed(1);p=true});h+=`<path d="${d}" fill="none" stroke="${l.c}" stroke-width="2.4" ${l.dash?'stroke-dasharray="6 5"':''}/>`});
+lab.forEach((_,i)=>h+=`<rect x="${L+i*sl}" y="${T}" width="${sl}" height="${H-T-B}" fill="transparent"><title>${lab[i]} (${SNn[band[i]]})\n${lines.filter(l=>l.v[i]!=null).map(l=>l.n+': '+f(l.v[i])).join('\\n')}</title></rect>`);
+el.innerHTML=h+'</svg>'}
+function draw(){const T=inv.reduce((a,b)=>a+b,0),L=Math.min(15,Math.max(3,ls)),N=L*12,fsP=fs/100,foP=fo/100;
+$('#tot').textContent=fm(T);
+// breakeven per tháng (độc lập kịch bản)
+const BE=M.map(x=>{const fixed=x.rent+x.staff*fsP+x.other*foP,varRatio=(x.cogs+x.staff*(1-fsP)+x.other*(1-foP))/x.rev,be=fixed/(1-varRatio);return{be,cups:be*1e6/price,fixed,varRatio}});
+const ty=M.slice(12),aR=ty.reduce((a,x)=>a+x.rev,0)/12,aO=ty.reduce((a,x)=>a+x.op,0)/12,aFixed=ty.reduce((a,x,i)=>a+BE[i+12].fixed,0)/12,aVarR=ty.reduce((a,x,i)=>a+BE[i+12].varRatio,0)/12,aCM=1-aVarR;
+// hoàn vốn ở mức hiện tại (dùng để định nghĩa kịch bản "sớm hơn 1 năm")
+const cmCur=[];{let r=0;for(let m=1;m<=N;m++){r+=m<=24?M[m-1].op:aO;cmCur.push(r)}}
+const pbCur=cmCur.findIndex(c=>c>=T)+1,c24=cmCur[23];
+// 3 kịch bản
+const SCN={};
+SCN.current={t:'Giữ nguyên doanh thu hiện tại',rev:aR,op:aO,d:'Dùng đúng doanh thu bình quân 12 tháng gần nhất, không đổi gì.'};
+if(pbCur&&pbCur-24<=12){SCN.faster={t:'Hoàn vốn sớm hơn 1 năm',rev:aR,op:aO,d:'Đã đạt được ở mức doanh thu hiện tại, không cần tăng thêm.',same:true}}
+else{const target=pbCur?pbCur-12:25,k=target-24,opNeed=(T-c24)/k,opF=Math.max(aO,opNeed),extraRev=(opF-aO)/aCM;SCN.faster={t:'Hoàn vốn sớm hơn 1 năm',rev:aR+extraRev,op:opF,d:`Tăng doanh thu bình quân thêm khoảng ${fm(extraRev)}/tháng so với hiện tại.`}}
+const opNeed2=(T-c24)/(N-24),revNeed=Math.max(0,(opNeed2+aFixed)/aCM),opSafe=revNeed*(1-aVarR)-aFixed;
+SCN.safe={t:'Doanh thu tối thiểu để an toàn',rev:revNeed,op:opSafe,d:revNeed<=aR?`Thấp hơn doanh thu hiện tại khoảng ${fm(aR-revNeed)}/tháng: hiện đang an toàn.`:`Cao hơn doanh thu hiện tại khoảng ${fm(revNeed-aR)}/tháng.`};
+$('#scards').innerHTML=['current','faster','safe'].map(k=>{const s=SCN[k];return `<div class="scard ${k==scKey?'on':''}" data-k="${k}"><h4>${s.t}</h4><p>${s.d}</p><div class="g">Doanh thu bình quân: ${fm(s.rev)}/tháng</div><span class="pick">${k==scKey?'Đang chọn ✓':'Chọn kịch bản này →'}</span></div>`}).join('');
+[...$('#scards').children].forEach(el=>el.onclick=()=>{scKey=el.dataset.k;draw()});
+const sc=SCN[scKey];
+$('#ctx').innerHTML=`Kịch bản: ${sc.t.toLowerCase()} · doanh thu bình quân ${fm(sc.rev)}/tháng — <a onclick="goInfo()">sửa ở tab Thông tin</a>`;
+const cm=[];{let r=0;for(let m=1;m<=N;m++){r+=m<=24?M[m-1].op:sc.op;cm.push(r)}}
+const pb=cm.findIndex(c=>c>=T)+1,c24b=cm[23],tot=cm[N-1],pbSeason=pb?smon(((pb-1)%12)+10>12?((pb-1)%12)-2:((pb-1)%12)+10):null;
+const K=[['Tổng vốn đầu tư',fm(T),'Tổng các khoản đầu tư ban đầu, xem ở tab Thông tin.'],
+['Lợi nhuận vận hành bình quân/tháng',fm(sc.op),'Theo kịch bản đang chọn: '+sc.t.toLowerCase()+'.'],
+['Số tháng dự kiến hoàn vốn',pb?pb+' tháng':'Chưa hoàn vốn','Thời điểm lợi nhuận vận hành lũy kế bằng hoặc vượt vốn đầu tư.'],
+['Thời điểm hoàn vốn',pb?dt(pb):'—','Tính từ tháng khai trương đầu tiên (10/2024).'],
+['% vốn đã thu hồi',pc(Math.min(1,c24b/T)),'Lợi nhuận vận hành lũy kế thực tế (24 tháng) chia vốn đầu tư.'],
+['Lợi nhuận lũy kế',fm(c24b),'Tổng lợi nhuận vận hành thực tế từ khi mở cửa.'],
+['Lợi nhuận cả thời hạn thuê',fm(tot)+' (sau vốn: '+fm(tot-T)+')','Tổng lợi nhuận vận hành '+L+' năm theo kịch bản đang chọn, đã trừ vốn đầu tư ở phần sau vốn.']];
+$('#kpis').innerHTML=K.map(k=>`<div class="k${['Số tháng dự kiến hoàn vốn','Lợi nhuận cả thời hạn thuê'].includes(k[0])?' hl':''}"><span class="l" title="${k[2]}">${k[0]}</span><div class="v" style="${k[1]=='Chưa hoàn vốn'?'color:var(--bad)':''}">${k[1]}</div></div>`).join('');
+// Hòa vốn mỗi tháng
+const lb=M.map(x=>x.label),band=M.map(x=>smon(x.m)),beRev=BE.map(x=>x.be),actRev=M.map(x=>x.rev);
+const margins=M.map((x,i)=>x.rev-BE[i].be),minI=margins.indexOf(Math.min(...margins)),minM=M[minI],beNow=BE[BE.length-1];
+$('#t0').textContent=`Cần khoảng ${n0(beNow.be)} triệu/tháng, tương đương ${n0(beNow.cups)} ly, để không lỗ`;
+bandChart($('#c0'),lb,band,[{n:'Doanh thu thực tế',c:'#8B5CF6',v:actRev},{n:'Doanh thu hòa vốn',c:'#EC4899',dash:1,v:beRev}],fm);
+ia('#i0',`Sát ngưỡng lỗ nhất vào ${minM.full.toLowerCase()} (${SNn[smon(minM.m)]}): doanh thu chỉ cao hơn mức hòa vốn khoảng ${fm(margins[minI])}.`,
+`Mùa thấp điểm cần bán khoảng ${n0(BE.filter((_,i)=>smon(M[i].m)=='low').reduce((a,x)=>a+x.cups,0)/BE.filter((_,i)=>smon(M[i].m)=='low').length)} ly/tháng để không lỗ, cao hơn mùa cao điểm. Chuẩn bị khuyến mãi hoặc cắt ca vào các tháng này.`);
+// Thu hồi vốn
+const H=hz?Math.min(hz,N):N,l2=Array.from({length:H},(_,i)=>i+1);
+$('#t1').textContent=pb?`Dự kiến hoàn vốn sau ${pb} tháng (${dt(pb)}), kịch bản ${sc.t.toLowerCase()}`:`Chưa hoàn vốn trong ${L} năm thuê, kịch bản ${sc.t.toLowerCase()}`;
+chart($('#c1'),l2,[{n:'Lợi nhuận lũy kế (thực tế)',c:'#8B5CF6',v:l2.map((m,i)=>i<24?cm[i]:null)},{n:'Lợi nhuận lũy kế (dự kiến)',c:'#8B5CF6',dash:1,v:l2.map((m,i)=>i>=23?cm[i]:null)},{n:'Vốn đầu tư',c:'#EC4899',v:l2.map(()=>T)}],{h:290,mark:pb&&pb<=H?pb-1:-1,markLabel:'Hoàn vốn: '+dt(pb)});
+ia('#i1',pb?`Dùng khoảng ${pc(pb/N)} thời hạn thuê để thu hồi vốn, còn lại ${L-Math.ceil(pb/12)} năm là lợi nhuận ròng.`:`Ở kịch bản này, vốn đầu tư chưa thu hồi hết trong ${L} năm thuê.`,
+pb?(pbSeason=='low'?'Tháng hoàn vốn rơi vào mùa thấp điểm: theo dõi sát dòng tiền quanh mốc này.':'Giữ vận hành ổn định đến mốc hoàn vốn, tránh chi đầu tư thêm trước thời điểm này.'):'Xem tab Thông tin để chọn kịch bản doanh thu cao hơn.');
+// bảng theo năm
+const Y=[];for(let k=1;k<=L;k++){const rev=k<=2?M.slice((k-1)*12,k*12).reduce((a,x)=>a+x.rev,0):sc.rev*12,p=k<=2?M.slice((k-1)*12,k*12).reduce((a,x)=>a+x.op,0):sc.op*12;Y.push({k,rev,cost:rev-p,p,act:k<=2})}
+let run2=0;Y.forEach(y=>{run2+=y.p;y.cum=run2});const py=pb?Math.ceil(pb/12):0;
+$('#yr').innerHTML='<tr><th>Năm</th><th>Loại dữ liệu</th><th>Doanh thu</th><th>Chi phí</th><th>Lợi nhuận</th><th>Lợi nhuận lũy kế</th><th>Sau khi trừ vốn</th></tr>'+Y.map(y=>`<tr class="${y.k==py?'pb':''}"><td>Năm ${y.k}${y.k==py?' (hoàn vốn)':''}</td><td class="nu">${y.act?'Thực tế':'Dự kiến'}</td><td>${fm(y.rev)}</td><td>${fm(y.cost)}</td><td>${fm(y.p)}</td><td>${fm(y.cum)}</td><td class="${y.cum-T>=0?'up':'dn'}">${fm(y.cum-T)}</td></tr>`).join('');
+// kết luận
+const hd=pb?`Ở kịch bản ${sc.t.toLowerCase()}, quán dự kiến hoàn vốn sau ${pb} tháng (${dt(pb)}) và tạo thêm ${fm(tot-T)} lợi nhuận trong ${L-Math.ceil(pb/12)} năm còn lại của thời hạn thuê.`:`Ở kịch bản ${sc.t.toLowerCase()}, quán chưa hoàn vốn trong ${L} năm thuê.`;
+$('#concl').innerHTML=`<div class="conc"><h2>${hd}</h2><p>Doanh thu hòa vốn mỗi tháng khoảng ${fm(beNow.be)} (${n0(beNow.cups)} ly), không phụ thuộc kịch bản đang chọn.</p>
+<ul><li><b>Mùa thấp điểm</b>${minM.full} đang sát ngưỡng lỗ nhất; chuẩn bị bán thêm hoặc khuyến mãi.</li>
+<li><b>Hoàn vốn sớm hơn</b>${SCN.faster.d}</li>
+<li><b>An toàn dài hạn</b>${SCN.safe.d}</li></ul></div>`;
+}
+draw();
+
+</script></body></html>
